@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import *
+from tkinter import messagebox
 
 #def
 def click():
@@ -9,6 +10,7 @@ def click():
         password = kodeord[entered_text]
     except:
         password = "Kodeordet er forkert"
+        tk.messagebox.showerror("Kodeordet er forkert", "Det indtastede kodeord er forkert")
     output.insert(END, password)
 
 #main:
